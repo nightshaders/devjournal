@@ -1,0 +1,15 @@
+include ../mixins/core-mixins.jade
+doctype html
+html
+  head
+    title Web Pair
+    link(rel='shortcut icon' href='/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='/favicon.ico' type='image/x-icon')
+
+    script(src=js.hash, type='text/javascript')
+    link(rel="stylesheet" href=css.hash)
+    block scripts
+    block styles
+  body
+    block root
+

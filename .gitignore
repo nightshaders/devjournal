@@ -1,0 +1,19 @@
+### Logs
+logs
+*.log
+.log.*
+pids
+*.pid
+*.seed
+build/Release
+*.DS_Store
+
+### misc
+doc/
+docs/
+node_modules/
+.files/
+.idea/
+pkg/
+bin/
+src/tmp-*

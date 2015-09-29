@@ -1,0 +1,1 @@
+angular.module('App', ['blog-articles'])

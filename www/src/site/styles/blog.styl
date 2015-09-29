@@ -1,0 +1,41 @@
+
+blog()
+  $center_w1 = 960px
+  $center_w2 = 1024px
+
+  $banner_h1 = 48px
+  $banner_inv = ($PHI_INV * $banner_h1) / 2
+  $ct_title = $banner_h1 / 2
+  $ct_ht = $ct_title * $PHI_INV
+
+  .blogs
+    blog-article
+      centered($center_w1)
+      h2
+        font-family Montserrat Bold
+        font-size $ct_title
+      .content
+        font-family Italiana
+        font-size $ct_ht
+        color #007
+
+  .edge
+    background linear-gradient(to bottom, #00f, #006)
+    box-shadow: 0 3px 40px -2px #111;
+    height $banner_inv
+    border-top 1px solid #fff
+
+  .banner
+    background linear-gradient(to bottom, #008, #001)
+    margin-bottom 24px
+
+    h1
+      centered($center_w1)
+      font-family Montserrat Bold
+      font-size $banner_h1
+      line-height $banner_h1
+      padding 6px 0
+      color #fff
+
+.main
+  blog()

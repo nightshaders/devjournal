@@ -1,0 +1,23 @@
+
++ngTemplate('/plain-blog-article')
+  article
+    h2
+      | {{ article.title }}
+    aside
+      | {{ article.date }}
+    .content
+      | {{ article.content }}
+
+
++ngTemplate('/add-users')
+  .first(ng-controller="FirstController as first")
+    h1
+      | {{ first.data.name }}
+    h2
+      | {{ first.data.id }}
+    button(type="button", class="btn", ng-click="first.submit()")
+        | Submit
+    button(type="button", class="btn", ng-click="first.getUsers()")
+        | Get Users
+    button(type="button", class="btn", ng-click="first.createUser()")
+        | Create User
